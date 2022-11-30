@@ -1,0 +1,234 @@
+.slick-track,
+.slick-ilst {
+    transition-delay: 0.03s;
+}
+
+/* top banner */
+
+.topBanner {
+    position: relative;
+    background: #f9f9f9;
+    padding: 30px 0;
+    transition: padding 0.5s;
+}
+
+.topBanner.on {
+    height: 0;
+    padding: 0 0;
+    overflow: hidden;
+}
+
+.inner {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.topBanner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.topBanner p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.topBanner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+}
+
+.topBanner a {
+    top: 0;
+    padding: 3px 20px 5px 20px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: 2px;
+}
+
+
+/* header */
+
+.header {}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header .inner {
+    display: flex;
+    font-size: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 200px;
+}
+
+.header .gnb {
+    margin: 0 0 0 100px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 80px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(0, -40%);
+    margin: 0 20px 0 -10px;
+    width: 1px;
+    height: 12px;
+    background: #999;
+}
+
+.header .gnb>ul a {
+    display: block;
+}
+
+
+.header .right {
+    margin: 0 0 0 auto;
+}
+
+/*mainSlide*/
+
+.mainVisual {
+    position: relative;
+
+}
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/porsche-normal.webp)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/porsche-normal02.webp)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/porsche-normal03.webp)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm04 {
+    background: url(../img/porsche-normal04.webp)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #f9f9f9;
+    margin: 0 2px;
+    border-radius: 5%;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #333;
+}
+
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+}
+
+.mainVisual .mainSlide p {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.mainVisual .mainSlide .inner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
