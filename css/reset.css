@@ -25,6 +25,12 @@ img {
     vertical-align: middle;
 }
 
+em,
+i,
+address {
+    font-style: normal;
+}
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1;
