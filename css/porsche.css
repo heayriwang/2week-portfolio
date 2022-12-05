@@ -71,37 +71,58 @@
 }
 
 .header .gnb {
-    margin: 0 0 0 100px;
+    margin: 80px auto;
 }
 
 .header .gnb>ul {
     display: flex;
-    gap: 80px;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header .gnb>ul>li {
     position: relative;
+    flex: 1;
+    line-height: 1px;
+    border-left: 1px solid #fff;
 }
 
-.header .gnb>ul>li~li::before {
-    content: "";
+.header .gnb>ul>li~li {
+    border-left: 1px solid #ddd;
+    line-height: 3px;
+}
+
+.header .gnb>ul>li:last-child {
+    border-right: 1px solid #fff;
+}
+
+.header .gnb>ul>li ul {
     position: absolute;
-    top: 50%;
-    left: -30px;
-    transform: translate(0, -40%);
-    margin: 0 20px 0 -10px;
-    width: 1px;
-    height: 12px;
-    background: #999;
+    top: 50px;
+    left: 0;
+    background: #ddd;
+    width: 100%;
+    z-index: 999;
+    font-size: 15px;
+    display: none;
+    margin: 10px 0;
+
 }
 
-.header .gnb>ul a {
+.header .gnb a {
     display: block;
+    font-weight: bold;
+    margin: 25px 0;
 }
 
+.header .gnb>ul>li:hover ul {
+    display: block;
+    border-top: 1px solid #fff;
+}
 
-.header .right {
-    margin: 0 0 0 auto;
+.header .gnb>ul>li ul>li~li {
+    border-top: 1px solid #ddd;
 }
 
 /*mainSlide*/
@@ -151,8 +172,8 @@
     font-size: 0;
     width: 100px;
     height: 100px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
 }
 
 .mainVisual .mainSlide .slick-prev {
@@ -510,6 +531,145 @@
     width: 100%;
     height: 200px;
 }
+
+.mainBottom {
+    padding: 100px 0;
+}
+
+.mainBottom h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
+
+}
+
+.mainBottom p {
+    font-size: 15px;
+    font-weight: 380;
+    margin: 0 0 50px 0;
+    color: #333;
+    text-align: center;
+
+}
+
+.mainBottom img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.mainBottom .inner {
+
+    gap: 30px;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.mainBottom .inner figure {
+    position: relative;
+    flex: 1;
+}
+
+.mainBottom .inner figure .box {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainBottom .inner figure:hover .box {
+
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.mainBottom .inner figure .box02 {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainBottom .inner figure:hover .box02 {
+
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.mainBottom .inner figure .box03 {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainBottom .inner figure:hover .box03 {
+
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+
+
+/*footer part*/
+
+
+
+
 
 .footer {
     background: #343a40;
