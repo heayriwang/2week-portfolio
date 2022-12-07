@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
 .slick-track,
 .slick-ilst {
     transition-delay: 0.03s;
@@ -89,8 +91,9 @@
 }
 
 .header .gnb>ul>li~li {
-    border-left: 1px solid #ddd;
+    border-left: 2px solid #ddd;
     line-height: 3px;
+    height: 30px;
 }
 
 .header .gnb>ul>li:last-child {
@@ -101,6 +104,7 @@
     position: absolute;
     top: 50px;
     left: 0;
+
     background: #ddd;
     width: 100%;
     z-index: 999;
@@ -113,7 +117,7 @@
 .header .gnb a {
     display: block;
     font-weight: bold;
-    margin: 25px 0;
+    margin: 10px 0;
 }
 
 .header .gnb>ul>li:hover ul {
@@ -123,6 +127,12 @@
 
 .header .gnb>ul>li ul>li~li {
     border-top: 1px solid #ddd;
+
+}
+
+.header .right .xi-bars {
+    display: block;
+    margin: 83px 0 0 0;
 }
 
 /*mainSlide*/
